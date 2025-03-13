@@ -1,0 +1,825 @@
+@charset "utf-8";
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Noto Sans JP", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Helvetica Neue", arial, meiryo, sans-serif;
+}
+
+.underLine {
+  position: relative;
+}
+
+.underLine::after {
+  background-color: #A71A1C;
+  bottom: -6px;
+  content: "";
+  height: 2px;
+  left: 0;
+  position: absolute;
+  transform: scale(0, 1);
+  transform-origin: right top;
+  transition: transform .3s;
+  width: 100%;
+}
+
+/* リンクにホバーした際の下線の表示 */
+.underLine:hover::after {
+  transform-origin: left top;
+  transform: scale(1, 1);
+}
+
+
+/* ヘッダー */
+#header {
+  display: flex;
+  position: fixed;
+  align-items: center;
+  background-color: #FFF;
+  z-index: 999;
+  width: 100%;
+  margin: 0 auto;
+  transition: all 0.3s ease;
+}
+
+.header-main {
+  display: flex;
+  margin: 0 auto;
+  align-items: center;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.header-main .logo img {
+  display: block;
+  width: 150px;
+  height: 50px;
+  margin-right: 40px;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.header-main nav ul {
+  display: flex;
+  list-style: none;
+}
+
+.header-main nav a {
+  color: black;
+  font-weight: 700;
+  opacity: 0.8;
+  text-decoration: none;
+  padding: 0 16px;
+}
+
+.hover_navText {
+  color: #A71A1C;
+}
+
+.textLine::after {
+  display: block;
+  color: #A71A1C;
+  width: 100%;
+  bottom: -1px;
+}
+
+.header-main .btn {
+  display: flex;
+  width: 200px;
+  height: 70px;
+  margin: 16px auto;
+  margin-left: 40px;
+  margin-right: 30px;
+  border: 1px solid black;
+  border-radius: 4px;
+  background: #A71A1C;
+}
+
+.header-main .btn a {
+  display: block;
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  margin: 0 8px 0 30px;
+  padding: 0;
+  line-height: 70px;
+}
+
+.btn_icon {
+  display: flex;
+  align-items: center;
+  line-height: 16px;
+  padding: 0;
+  margin: 0;
+  vertical-align: bottom;
+}
+
+.header-main.fixed {
+  margin: 0;
+}
+
+/* ドロップダウンリスト  メニュー情報*/
+#mask {
+  background: rgba(0, 0, 0, 0.8);
+  -webkit-filter: blur(8px);
+  -moz-filter: blur(8px);
+  -ms-filter: blur(8px);
+  filter: blur(8px);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.dropDown_list {
+  width: 100%;
+  height: auto;
+  margin-left: 0;
+  padding: 24px;
+  padding-right: 0;
+  padding-left: 0;
+  background-color: #efece7;
+  position: fixed;
+  top: 100px;
+  /* left: -10px; */
+  display: flex;
+  z-index: 999;
+  border-radius: 0 0 16px 16px;
+}
+
+.dropDown_item {
+  display: flex;
+}
+
+.modal-title {
+  display: flex;
+  align-items: start;
+  width: 140px;
+  color: #333333;
+  margin-left: 0px;
+}
+
+.modal-title span {
+  font-size: 12px;
+  color: #FFF;
+  background-color: #A71A1C;
+  border-radius: 50%;
+  margin-left: 6px;
+  padding: 2px 4px;
+  text-align: center;
+}
+
+.link {
+  position: relative;
+}
+
+.dropDown {
+  display: none;
+  position: fixed;
+  top: 100px;
+  left: 0;
+}
+
+.dropDown_item {
+  margin-left: 30px;
+}
+
+.dropDown-courseMenu1 {
+  margin-right: 16px;
+  border: 1px solid rgb(0 0 0 / 10%);
+  padding: 8px 16px 0;
+  border-radius: 8px;
+}
+
+.dropDown-courseMenu1 h3 {
+  font-size: 12px;
+  color: #333333;
+}
+
+.dropDown-courseMenu2 {
+  margin-right: 16px;
+  border: 1px solid rgb(0 0 0 / 10%);
+  padding: 8px 16px 0;
+  border-radius: 8px;
+}
+
+.dropDown-courseMenu2 h3 {
+  font-size: 12px;
+  color: #333333;
+}
+
+.dropDown-courseMenu3 {
+  border: 1px solid rgb(0 0 0 / 10%);
+  padding: 8px 16px 0;
+  border-radius: 8px;
+}
+
+.dropDown-courseMenu3 h3 {
+  font-size: 12px;
+  color: #333333;
+  margin-bottom: 47px;
+}
+
+.sub-badges {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.sub-badges img {
+  width: 26px;
+  width: 26px;
+}
+
+.dropDown-list {
+  text-align: left;
+}
+
+.dropDown-list ul {
+  flex-direction: column;
+  justify-content: left;
+  list-style: none;
+  margin-left: 32px;
+  margin-top: 14px;
+}
+
+.dropDown-list li {
+  line-height: 30px;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: left;
+}
+
+.dropDown-list a {
+  text-decoration: none;
+  color: #333333;
+  opacity: .9;
+}
+
+.link:hover>.dropDown,
+.link:focus-within>.dropDown>.dropDown_list {
+  display: block;
+}
+
+.dropDown__list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.dropDown__link {
+  padding: 10px 20px;
+  transition: color .15s;
+}
+
+.dropDown__link:hover,
+.dropDown__link:focus {
+  color: hotpink;
+}
+
+#mask.hidden {
+  display: none;
+}
+
+#modal-menuinfo.hidden {
+  display: none;
+}
+
+/* モーダル キッズメニュー */
+
+.modal-kidsMenu {
+  display: flex;
+}
+
+.modal-kidsMenu {
+  margin-left: 50px;
+}
+
+.modal-kidsMenu1 {
+  margin-right: 16px;
+  border: 1px solid rgb(0 0 0 / 10%);
+  padding: 0 16px;
+  padding-top: 2px;
+  border-radius: 8px;
+}
+
+.modal-kidsMenu1 h3 {
+  height: 16px;
+  font-size: 12px;
+  margin-bottom: 16px;
+  color: #333333;
+  font-weight: bold;
+}
+
+.modal-kidsMenu2 {
+  margin-right: 16px;
+  border: 1px solid rgb(0 0 0 / 10%);
+  padding: 2px 16px 0;
+  border-radius: 8px;
+}
+
+.modal-kidsMenu img {
+  margin-top: 4px;
+  vertical-align: bottom;
+}
+
+.modal-kidsMenu2 h3 {
+  font-size: 12px;
+  margin-bottom: 16px;
+  color: #333333;
+}
+
+#modal-kidsinfo.hidden {
+  display: none;
+}
+
+
+/* ヘッダーリンク */
+.header-link {
+  position: relative;
+  z-index: 999;
+}
+
+.header-link ul {
+  list-style: none;
+}
+
+.header-link li {
+  margin-top: 16px;
+}
+
+.header-link1 {
+  text-decoration: none;
+  background-color: #A71A1C;
+  padding: 4px 14px;
+  border-radius: 8px;
+  color: #FFF;
+  font-weight: bold;
+  position: fixed;
+  top: 460px;
+  right: 20px;
+}
+
+.header-link2 {
+  text-decoration: none;
+  background-color: #A71A1C;
+  padding: 4px 14px;
+  border-radius: 8px;
+  color: #FFF;
+  font-weight: bold;
+  position: fixed;
+  top: 500px;
+  right: 20px;
+}
+
+.header-link1 span {
+  color: #fff;
+  background-color: #A71A1C;
+  padding: 1px 4px;
+  border-radius: 50%;
+  position: fixed;
+  top: 455px;
+}
+
+.header-link2 span {
+  color: #fff;
+  background-color: #A71A1C;
+  padding: 1px 4px;
+  border-radius: 50%;
+  position: fixed;
+  top: 495px;
+}
+
+.hide {
+  display: none;
+}
+
+/* サブリンク */
+.sub_rinks {
+  display: flex;
+  justify-content: right;
+  padding: 120px 8px 0;
+}
+
+.sub_rinks a {
+  color: rgb(0, 0, 0, 0.7);
+  font-size: 14px;
+  font-weight: bold;
+  margin-right: 8px;
+}
+
+.c_hoverLine {
+  position: relative;
+  text-decoration: none;
+}
+
+.c_hover--text::after {
+  background-color: #333333;
+  bottom: 0;
+  content: "";
+  height: 1px;
+  left: 0;
+  position: absolute;
+  transform: scale(0, 1);
+  transform-origin: right top;
+  transition: transform .3s;
+  width: 100%;
+}
+
+/* リンクにホバーした際の下線の表示 */
+.c_hoverLine:hover::after {
+  transform-origin: left top;
+  transform: scale(1, 1);
+}
+
+/* 焼肉きんぐについて */
+
+.yakinikuKing {
+  width: 100%;
+  text-align: center;
+}
+
+.yakinikuKing h2 {
+  font-size: 42px;
+  padding: 50px 0;
+}
+
+.yakinikuKing h3 {
+  font-size: 32px;
+  margin-top: 75px;
+  margin-bottom: 54px;
+}
+
+.yakinikuKing p {
+  line-height: 2.5rem;
+  font-size: 20px;
+  margin-bottom: 75px;
+}
+
+/* 焼肉きんぐのこだわり */
+
+.yakinikuKing-pride  {
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+.yakinikuKing-pride h2 {
+  font-size: 35px;
+  margin-top: 5%;
+}
+
+.prideItem {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-left: 40px;
+  padding: 60px 0;
+}
+
+.prideItem-r {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 50px 0;
+  padding-left: 40px;
+  background: #fbf3f1;
+}
+
+.prideItem-info {
+  width: 515px;
+  padding-top: 50px;
+  text-align: left;
+  margin: 0 auto;
+}
+
+.prideItem-info h3 {
+  color: #A71A1C;
+  font-size: 27px;
+}
+
+.prideItem-info p {
+  margin-top: 30px;
+  font-size: 20px;
+}
+
+/* フッター */
+.Item2-title a {
+  position: relative;
+}
+
+.Item2-title a::after {
+  background-color: #FFF;
+  bottom: -6px;
+  content: "";
+  height: 2px;
+  left: 0;
+  position: absolute;
+  transform: scale(0, 1);
+  transform-origin: right top;
+  transition: transform .3s;
+  width: 70%;
+}
+
+/* リンクにホバーした際の下線の表示 */
+.Item2-title a:hover::after {
+  transform-origin: left top;
+  transform: scale(1, 1);
+}
+
+.Item2-body a {
+  position: relative;
+}
+
+.Item2-body a::after {
+  background-color: #FFF;
+  bottom: -6px;
+  content: "";
+  height: 2px;
+  left: 0;
+  position: absolute;
+  transform: scale(0, 1);
+  transform-origin: right top;
+  transition: transform .3s;
+  width: 100%;
+}
+
+/* リンクにホバーした際の下線の表示 */
+.Item2-body a:hover::after {
+  transform-origin: left top;
+  transform: scale(1, 1);
+}
+
+.footerItem3 a {
+  position: relative;
+}
+
+.footerItem3 a::after {
+  background-color: #FFF;
+  bottom: -6px;
+  content: "";
+  height: 2px;
+  left: 0;
+  position: absolute;
+  transform: scale(0, 1);
+  transform-origin: right top;
+  transition: transform .3s;
+  width: 100%;
+}
+
+/* リンクにホバーした際の下線の表示 */
+.footerItem3 a:hover::after {
+  transform-origin: left top;
+  transform: scale(1, 1);
+}
+
+.footerItem4 a {
+  position: relative;
+}
+
+.footerItem4 a::after {
+  background-color: #FFF;
+  bottom: -6px;
+  content: "";
+  height: 2px;
+  left: 0;
+  position: absolute;
+  transform: scale(0, 1);
+  transform-origin: right top;
+  transition: transform .3s;
+  width: 100%;
+}
+
+/* リンクにホバーした際の下線の表示 */
+.footerItem4 a:hover::after {
+  transform-origin: left top;
+  transform: scale(1, 1);
+}
+
+.footerItem5 a {
+  position: relative;
+}
+
+.footerItem5 a::after {
+  background-color: #FFF;
+  bottom: -6px;
+  content: "";
+  height: 2px;
+  left: 0;
+  position: absolute;
+  transform: scale(0, 1);
+  transform-origin: right top;
+  transition: transform .3s;
+  width: 100%;
+}
+
+/* リンクにホバーした際の下線の表示 */
+.footerItem5 a:hover::after {
+  transform-origin: left top;
+  transform: scale(1, 1);
+}
+
+
+
+footer {
+  display: flex;
+  background-color: #2e2e2e;
+  padding: 60px 40px;
+}
+
+.footerItem1 {
+  padding-left: 40px;
+  padding-right: 80px;
+  text-align: left;
+}
+
+.footerItem1 img {
+  width: 250px;
+  height: auto;
+}
+
+.footerItem1 ul {
+  list-style: none;
+  margin-top: 24px;
+}
+
+.footerItem1 a {
+  color: #FFF;
+}
+
+.footerItem2 {
+  padding-right: 50px;
+}
+
+.footerItem2 ul {
+  list-style: none;
+}
+
+.Item2-title a {
+  display: block;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 20px;
+  color: #FFF;
+  margin-bottom: 24px;
+}
+
+.Item2-body {
+  margin-top: 8px;
+  font-size: 14px;
+}
+
+.Item2-body a {
+  white-space: nowrap;
+  text-decoration: none;
+  color: #FFF;
+  opacity: .6;
+}
+
+.footerItem3 ul {
+  list-style: none;
+}
+
+.footerItem3 a {
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.Item3-tilte a {
+  color: #fff;
+}
+
+.Item3-tilte1 {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.Item3-tilte2 {
+  margin-top: 24px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.footerItem2-1 {
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+
+.footerItem2-1-2 {
+  margin-top: 8px;
+}
+
+.footerItem2-1 a {
+  color: #FFF;
+  opacity: .6;
+}
+
+.footerItem3-1 a {
+  font-size: 18px;
+  color: #FFF;
+  font-weight: bold;
+}
+
+.footerItem3-2 {
+  margin-top: 16px;
+}
+
+.footerItem3-2 a {
+  color: #FFF;
+  opacity: .6;
+}
+
+.footerItem4 ul {
+  list-style: none;
+  padding-left: 40px;
+  padding-right: 30px;
+}
+
+.footerItem4 a {
+  text-decoration: none;
+}
+
+.footerItem4-1 a {
+  font-size: 18px;
+  color: #FFF;
+  font-weight: bold;
+}
+
+.footerItem4-2 {
+  margin-top: 24px;
+}
+
+.footerItem4-2 a {
+  font-size: 18px;
+  color: #FFF;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+.footerItem4-3 {
+  margin-top: 24px;
+}
+
+.footerItem4-3 a {
+  white-space: nowrap;
+  text-decoration: none;
+  color: #FFF;
+  opacity: .6;
+}
+
+.footerItem5 {
+  padding-left: 20px;
+  border-left: 1px solid #444444;
+}
+
+.footerItem5 ul {
+  list-style: none;
+}
+
+.footerItem5 a {
+  text-decoration: none;
+  white-space: nowrap;
+  font-size: 12px;
+  color: #FFF;
+  font-weight: bold;
+}
+
+.footerItem5-2 {
+  margin-top: 8px;
+}
+
+.footerItem5-3 {
+  margin-top: 8px;
+}
+
+.footerItem5-4 {
+  margin-top: 8px;
+}
+
+.footerItem6 ul {
+  display: flex;
+  background-color: #2E2E2E;
+  list-style: none;
+  padding: 50px 50px;
+}
+
+.footerItem6 a {
+  margin-left: 16px;
+  color: #fff;
+  opacity: .6;
+  font-size: 14px;
+}
+
+.copyright {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-image: url(../img/bg_footer_copy.jpg);
+  height: 100px;
+}
+
+.copyLink {
+  margin-right: 70px;
+  color: #FFF;
+}
