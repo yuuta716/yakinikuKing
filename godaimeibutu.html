@@ -1,0 +1,954 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="godai/style.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="l-header-main">
+    <a href="#" class="l-img"><img src="img/logo.png"></a>
+    <div class="l-btn">
+      <a href="#">予約・店舗検索</a>
+      <span class="l-btn_icon"><img src="img/カレンダーのフリーアイコン2.png"></span>
+    </div>
+  </div>
+  <nav class="l-bottomNav">
+    <div class="l-bottomNav-body">
+      <ul class="l-bottomNav-list">
+        <li class="l-bottomNav-item -current">
+          <a href="#" class="l-bottomNav-button"><span>トップ</span></a>
+        </li>
+        <li class="l-bottomNav-item">
+          <a href="menu.html" class="l-bottomNav-button"><span>メニュー<br>情報</span></a>
+        </li>
+        <li class="l-bottomNav-item">
+          <a href="kodomo.html" class="l-bottomNav-button"><span>お子様連れ<br>歓迎</span></a>
+        </li>
+        <li class="l-bottomNav-item">
+          <a href="deliciuosEat.html" class="l-bottomNav-button"><span>美味しい<br>食べ方</span></a>
+        </li>
+        <li class="l-bottomNav-item">
+          <button class="l-bottomNav-Menu-button"><span>Menu</span></button>
+          <div class="l-bottomNav-Menu-List overlay">
+            <span class="material-icons" id="close">close</span>
+            <div class="l-modalMenu--bodyInner">
+              <nav>
+                <ul>
+                  <li>
+                    <div class="overlay-btn">
+                      <a href="#">予約・店舗検索</a>
+                      <span class="l-btn_icon"><img src="img/カレンダーのフリーアイコン2.png"></span>
+                    </div>
+                  </li>
+                  <li><a href="#" class="overlayTop">トップ</a></li>
+                  <li>
+                    <div class="overlayMenuTitle">
+                      <a href="#">メニュー情報</a>
+                    </div>
+                    <div class="l-modalMenu--navAccordion">
+                      <div class="overlayMenuBody">
+                        <ul class="overlayMenuBody-navThumb">
+                          <li>
+                            <a href="#">
+                              <img src="img/menu_img-02.webp">
+                              <span>きんぐコース</span>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#">
+                              <img src="img/menu_img-02.webp">
+                              <span>きんぐコース</span>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#">
+                              <img src="img/menu_img-01.webp">
+                              <span>58品コース</span>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#">
+                              <img src="img/carousel-new.jpg">
+                              <span>五大名物コース</span>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#">
+                              <img src="img/menu_img-02.webp">
+                              <span>期間限定</span>
+                            </a>
+                          </li>
+                        </ul>
+                        <ul class="overlayMenuBody-navList">
+                          <li><a href="#">ドリンク・飲み放題</a></li>
+                          <li><a href="#">ランチコース</a></li>
+                          <li><a href="#">キッズメニュー</a></li>
+                          <li><a href="#">単品メニュー</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="l-modalMenu--nav">
+                      <div class="l-modalMenu--navitle">
+                        <a href="deliciuosEat.html">美味しい食べ方ガイド</a>
+                      </div>
+                    </div>
+                    <div class="l-modalMenu--menu js-accordion">
+                      <div class="l-modalMenu--menuTitle Js-accordion-toggle">
+                        <span>お子様連れのお客様へ<span>
+                      </div>
+                      <div class="l-modalMenu--menuContainer">
+                        <ul class="l-modalMenu-menuList">
+                          <li><a href="#">お子様連れのお客様へトップ</a></li>
+                          <li><a href="#">おなかがぐ～ぐ～アイランド</a></li>
+                          <li><a href="#">キッズメニュー</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="l-modalMenu--menu js-accordion">
+                      <div class="l-modalMenu--menuTitle Js-accordion-toggle">
+                        <span>焼肉きんぐについて<span>
+                      </div>
+                      <div class="l-modalMenu--menuContainer">
+                        <ul class="l-modalMenu-menuList">
+                          <li><a href="#">焼肉きんぐについてトップ</a></li>
+                          <li><a href="#">安全安心の取り組み</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="l-modalMenu--navitle">
+                      <a href="osirase.html">お知らせ</a>
+                    </div>
+                    <div class="l-modalMenu--navitle">
+                      <a href="#">公式アプリダウンロード</a>
+                    </div>
+                    <div class="l-modalMenu-sns">
+                      <ul class="l-modalMenu-snsList">
+                        <li><a href="#">公式</a></li>
+                        <li><a href="#">公式アプリ</a></li>
+                        <li><a href="#">アルバイト募集</a></li>
+                      </ul>
+                    </div>
+                    <div class="l-modalMenu--sitemapSub">
+                      <ul class="l-modalMenu--corporate">
+                        <li><a href="#">会社概要</a></li>
+                        <li><a href="#">店舗用地募集</a></li>
+                        <li><a href="#">プライバシーポリシー</a></li>
+                        <li><a href="#">利用規約</a></li>
+                        <li><a href="#">ご意見お問い合わせ</a></li>
+                      </ul>
+                    </div>
+                    <section class="c-searchNav">
+                      <div class="C-searchNav-BM">
+                        <h2 class="C-searchNav-heading">予約・店舗検索</h2>
+                        <ul class="C-searchNav-menuList">
+                          <li class="c-searchNav-menuItem">
+                            <a href="#" class="menuButton-1">
+                              <img src="img/目的地アイコン1.png">
+                              <span class="menuWord">現在地から探す</span>
+                              <span class="menuButton">></span>
+                            </a>
+                          </li>
+                          <li class="c-searchNav-menuItem">
+                            <a href="#" class="menuButton-2">
+                              <img src="img/日本地図のアイコン.png">
+                              <span class="menuWord">都道府県から探す</span>
+                              <span class="menuButton">></span>
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </section>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <header id="header">
+    <div class="header-main">
+      <div class="logo">
+        <img src="img/logo.png">
+      </div>
+      <nav>
+        <ul>
+          <li><a class="underLine" href="index.html">トップ</a></li>
+          <li class="list_item">
+            <div class="link link-hover" tabindex="0">
+              <a href="menu.html" class="underLine">メニュー情報</a>
+              <div class="dropDown">
+                <ul class="dropDown_list">
+                  <li class="dropDown_item">
+                    <a href="#" class="modal-title">メニュー情報<span>></span></a>
+                  </li>
+                  <li class="dropDown_item">
+                    <div class="dropDown-courseMenu1">
+                      <a href="#">
+                        <h3>きんぐコース</h3>
+                        <div class="sub-badges">
+                          <img src="img/badge_godai.svg">
+                          <img src="img/badge_ura.svg">
+                          <img src="img/badge_limited.webp">
+                        </div>
+                        <img src="img/menu_img-02.webp" width="180" height="101"
+                          style="object-fit: cover; vertical-align: bottom;">
+                      </a>
+                    </div>
+                    <div class="dropDown-courseMenu2">
+                      <a href="#">
+                        <h3>プレミアムコース</h3>
+                        <div class="sub-badges">
+                          <img src="img/badge_tokusen.svg">
+                          <img src="img/badge_ura.svg">
+                          <img src="img/badge_godai.svg">
+                          <img src="img/badge_kokusan.svg">
+                          <img src="img/badge_limited.webp">
+                        </div>
+                        <img src="img/menu_img-03.webp" width="180" height="101"
+                          style="object-fit: cover; vertical-align: bottom;">
+                      </a>
+                    </div>
+                    <div class="dropDown-courseMenu3">
+                      <a href="#">
+                        <h3>58品コース</h3>
+                        <img src="img/menu_img-01.webp" width="180" height="101"
+                          style="object-fit: cover; vertical-align: bottom;">
+                      </a>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="dropDown-list" style="text-align: left;">
+                      <ul>
+                        <li><a href="#">五大名物</a></li>
+                        <li><a href="#">期間限定</a></li>
+                        <li><a href="#">ドリンク・飲み放題メニュー</a></li>
+                        <li><a href="#">ランチコース</a></li>
+                        <li><a href="#">キッズメニュー</a></li>
+                        <li><a href="#">単品メニュー</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+          </li>
+          <li><a class="underLine" href="deliciuosEat.html">美味しい食べ方</a></li>
+          <li class="list_item">
+            <div class="link link-hover" tabindex="0">
+              <a href="kodomo.html" class="underLine">お子様連れ歓迎</a>
+              <div class="dropDown">
+                <ul class="dropDown_list">
+                  <li class="dropDown_item">
+                    <a href="kodomo.html" class="modal-title">お子様連れ歓迎<span>></span></a>
+                  </li>
+                  <li class="dropDown_item">
+                    <div class="modal-kidsMenu1">
+                      <a href="#">
+                        <h3>おなかがぐ～ぐ～アイランド</h3>
+                        <img src="img/thumb_mega_gugu.webp" width="180" height="101" style="object-fit: cover;">
+                      </a>
+                    </div>
+                    <div class="modal-kidsMenu2">
+                      <a href="#">
+                        <h3>キッズメニュー</h3>
+                        <img src="img/thumb_mega_kids.webp" width="180" height="101" style="object-fit: cover;">
+                      </a>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+          </li>
+          <li><a class="underLine" href="yakinikuKing.html">焼肉キングについて</a></li>
+          <li><a class="underLine" href="osirase.html">お知らせ</a></li>
+        </ul>
+      </nav>
+      <div class="btn">
+        <a href="#">予約・店舗検索</a>
+        <span class="btn_icon"><img src="img/カレンダーのフリーアイコン2.png"></span>
+      </div>
+    </div>
+  </header>
+
+  <div class="sub_rinks">
+    <a href="#" class="c_hoverLine">
+      <span class="c_hover--text">公式X</span>
+    </a>
+    <a href="#" class="c_hoverLine">
+      <span class="c_hover--text">公式アプリ</span>
+    </a>
+    <a href="#" class="c_hoverLine">
+      <psan class="c_hover--text">アルバイト募集</psan>
+    </a>
+  </div>
+
+  <section class="l-section">
+    <div class="l-title">
+      <div class="l-title1">
+        <h1>五大名物</h1>
+        <img src="img/badge_godai.svg">
+      </div>
+      <div class="l-title2">
+        <a href="#">キングコース</a>
+        <a href="#">プレミアムコース</a>
+      </div>
+    </div>
+    <div class="l-description">
+      <p>
+        五大名物は「<a href="#">きんぐコース</a>」「<a href="#">プレミアムコース</a>」「単品」でご注文いただけます。
+      </p>
+    </div>
+    <div class="l-list">
+      <div class="l-listImg">
+        <img src="img/mv_cutout.webp">
+      </div>
+      <div class="l-list1">
+        <video src="video/19055_960x540.mp4" autoplay muted loop playsinline></video>
+      </div>
+      <div class="phone-l-listImg">
+        <img src="img/mv_cutout.webp">
+      </div>
+      <div class="l-list2">
+        <h2>進化し続ける<br class="pc">
+          <span>焼肉きんぐの名物</span>
+        </h2>
+        <p>
+          部位やカット方法、カットの厚みにまでこだわり、美味しさを追求しています。
+        </p>
+      </div>
+      <div class="l-list3">
+        <div class="l-listItem">
+          <a href="#">
+            <img src="img/img_karubi.webp">
+            <div class="l-listItemBody1">
+              <h3>【名物】きんぐカルビ<span>↓</span></h3>
+              <p>肉味と脂の甘みが絶品</p>
+            </div>
+          </a>
+        </div>
+        <div class="l-listItem">
+          <a href="#">
+            <img src="img/img_aburi.webp">
+            <div class="l-listItemBody2">
+              <h3>【名物】炙りすき焼きカルビ<span>↓</h3>
+              <p>絶妙な肉の厚みと特製タレ相性抜群</p>
+            </div>
+          </a>
+        </div>
+        <div class="l-listItem">
+          <a href="#">
+            <img src="img/img_tsubo.webp">
+            <div class="l-listItemBody3">
+              <h3>【名物】壺漬けドラゴンハラミ<span>↓</h3>
+              <p>手切り肉を特製のタレに漬けこんだ名物商品</p>
+            </div>
+          </a>
+        </div>
+        <div class="l-listItem">
+          <a href="#">
+            <img src="img/img_negipon.webp">
+            <div class="l-listItemBody4">
+              <h3>【名物】ねぎポンで食べる大判サーロイン<span>↓</h3>
+              <p>柔らかく赤みの旨味ある大判サーロイン</p>
+            </div>
+          </a>
+        </div>
+        <div class="l-listItem">
+          <a href="#">
+            <img src="img/img_atsugiri.webp">
+            <div class="l-listItemBody5">
+              <h3>【名物】厚切り上ロース～ガリバタ醤油～<span>↓</h3>
+              <p>タレの味がしっかり絡む、豪快な厚切り肩ロース</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="Pc-speciality">
+      <div class="p-speciality">
+        <div class="karubiInner">
+          <div class="karubi-body-r">
+            <h2>
+              きんぐカルビ
+            </h2>
+            <p class="karubi-info">
+              一頭から500g程しか取れない希少部位の名物商
+              品！肉味と脂の甘みが美味しいこだわりの逸品！
+            </p>
+            <p class="karubi-price">690<span class=tax-price>(税込759円)</span></p>
+            <div class="karubi-link">
+              <a href="#">ご注文可能なコースはこちら<span>></span></a>
+            </div>
+            <div class="karubi-link">
+              <a href="#">美味しい食べ方旨テクはこちら<span>></span></a>
+            </div>
+            <div class="karubi-img">
+              <a href="#">
+                <img src="img/img_karubi.webp">
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="mv-img">
+          <img src="img/mv_king_karubi.webp">
+        </div>
+      </div>
+
+      <div class="p-speciality">
+        <div class="mv-img">
+          <img src="img/mv_aburi.webp">
+        </div>
+        <div class="karubiInner">
+          <div class="karubi-body">
+            <h2>
+              炙りすき焼カルビ
+            </h2>
+            <p class="karubi-info">
+              計算し尽くされた肉の厚みと自慢のすき焼のタレ
+              の相性抜群。卵にたっぷりくぐらせて食べると絶品
+              です。焼きすぎ注意！
+            </p>
+            <p class="karubi-price">690<span class=tax-price>(税込759円)</span></p>
+            <div class="karubi-link">
+              <a href="#">ご注文可能なコースはこちら<span>></span></a>
+            </div>
+            <div class="karubi-link">
+              <a href="#">美味しい食べ方旨テクはこちら<span>></span></a>
+            </div>
+            <div class="karubi-img">
+              <a href="#">
+                <img src="img/img_aburi.webp">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="p-speciality">
+        <div class="karubiInner">
+          <div class="karubi-body-r">
+            <h2>
+              壺漬けドラゴンハラミ
+            </h2>
+            <p class="karubi-info">
+              一本ずつ手切りしたお肉を、特製のタレに漬けこ
+              んだ名物商品。長さ20センチほどの商品を豪快に
+              焼き上げてお召し上がりください。
+            </p>
+            <p class="karubi-price">790<span class=tax-price>(税込869円)</span></p>
+            <div class="karubi-link">
+              <a href="#">ご注文可能なコースはこちら<span>></span></a>
+            </div>
+            <div class="karubi-link">
+              <a href="#">美味しい食べ方旨テクはこちら<span>></span></a>
+            </div>
+            <div class="karubi-img">
+              <a href="#">
+                <img src="img/img_tsubo.webp">
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="mv-img">
+          <img src="img/mv_tsubo.webp">
+        </div>
+      </div>
+
+
+      <div class="p-speciality">
+        <div class="mv-img">
+          <img src="img/mv_negipon.webp">
+        </div>
+        <div class="karubiInner">
+          <div class="karubi-body">
+            <h2>
+              ねぎポンで食べる<br class="pc">
+              大判サーロインの<br class="pc">
+            </h2>
+            <p class="karubi-info">
+              柔らかさと赤身の旨みが特徴のサーロインを、大
+              判にカットしました。豪快に炙り焼きしてねぎたっ
+              ぷりのポン酢につけてお召し上がりください。
+            </p>
+            <p class="karubi-price">690<span class=tax-price>(税込759円)</span></p>
+            <div class="karubi-link">
+              <a href="#">ご注文可能なコースはこちら<span>></span></a>
+            </div>
+            <div class="karubi-link">
+              <a href="#">美味しい食べ方旨テクはこちら<span>></span></a>
+            </div>
+            <div class="karubi-img">
+              <a href="#">
+                <img src="img/img_negipon.webp">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="p-speciality">
+        <div class="karubiInner">
+          <div class="karubi-body-r">
+            <h2>
+              厚切り上ロースの<br>
+              ～ガリバタ醤油～<br class="pc">
+            </h2>
+            <p class="karubi-info">
+              厳選した肩ロースを豪快に厚切りにし、タレの味
+              がしっかりと絡む様にスリットを入れました。自慢
+              のガリバタ醤油をたっぷりくぐらせお召し上がりく
+              ださい。
+            </p>
+            <p class="karubi-price">890<span class=tax-price>(税込979円)</span></p>
+            <div class="karubi-link">
+              <a href="#">ご注文可能なコースはこちら<span>></span></a>
+            </div>
+            <div class="karubi-link">
+              <a href="#">美味しい食べ方旨テクはこちら<span>></span></a>
+            </div>
+            <div class="karubi-img">
+              <a href="#">
+                <img src="img/img_atsugiri.webp">
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="mv-img">
+          <img src="img/mv_atsugiri.webp">
+        </div>
+      </div>
+    </div>
+
+    <div class="Phone-speciality">
+      <div class="speciality">
+        <div class="karubiInner">
+          <div class="phone-karubi-body">
+            <h2>
+              きんぐカルビ
+            </h2>
+            <p class="karubi-info">
+              一頭から500g程しか取れない希少部位の名物商
+              品！肉味と脂の甘みが美味しいこだわりの逸品！
+            </p>
+            <p class="karubi-price">690<span class=tax-price>(税込759円)</span></p>
+            <div class="karubi-link">
+              <a href="#">ご注文可能なコースはこちら<span>></span></a>
+            </div>
+            <div class="karubi-link">
+              <a href="#">美味しい食べ方旨テクはこちら<span>></span></a>
+            </div>
+            <div class="karubi-img">
+              <a href="#">
+                <img src="img/img_karubi.webp">
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="mv-img">
+          <img src="img/mv_king_karubi.webp">
+        </div>
+      </div>
+
+      <div class="speciality">
+        <div class="karubiInner">
+          <div class="phone-karubi-body">
+            <h2>
+              炙りすき焼カルビ
+            </h2>
+            <p class="karubi-info">
+              計算し尽くされた肉の厚みと自慢のすき焼のタレ
+              の相性抜群。卵にたっぷりくぐらせて食べると絶品
+              です。焼きすぎ注意！
+            </p>
+            <p class="karubi-price">690<span class=tax-price>(税込759円)</span></p>
+            <div class="karubi-link">
+              <a href="#">ご注文可能なコースはこちら<span>></span></a>
+            </div>
+            <div class="karubi-link">
+              <a href="#">美味しい食べ方旨テクはこちら<span>></span></a>
+            </div>
+            <div class="karubi-img">
+              <a href="#">
+                <img src="img/img_aburi.webp">
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="mv-img">
+          <img src="img/mv_aburi.webp">
+        </div>
+      </div>
+
+      <div class="speciality">
+        <div class="karubiInner">
+          <div class="phone-karubi-body">
+            <h2>
+              壺漬けドラゴンハラミ
+            </h2>
+            <p class="karubi-info">
+              一本ずつ手切りしたお肉を、特製のタレに漬けこ
+              んだ名物商品。長さ20センチほどの商品を豪快に
+              焼き上げてお召し上がりください。
+            </p>
+            <p class="karubi-price">790<span class=tax-price>(税込869円)</span></p>
+            <div class="karubi-link">
+              <a href="#">ご注文可能なコースはこちら<span>></span></a>
+            </div>
+            <div class="karubi-link">
+              <a href="#">美味しい食べ方旨テクはこちら<span>></span></a>
+            </div>
+            <div class="karubi-img">
+              <a href="#">
+                <img src="img/img_tsubo.webp">
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="mv-img">
+          <img src="img/mv_tsubo.webp">
+        </div>
+      </div>
+
+
+      <div class="speciality">
+        <div class="karubiInner">
+          <div class="phone-karubi-body">
+            <h2>
+              ねぎポンで食べる<br class="pc">
+              大判サーロインの<br class="pc">
+            </h2>
+            <p class="karubi-info">
+              柔らかさと赤身の旨みが特徴のサーロインを、大
+              判にカットしました。豪快に炙り焼きしてねぎたっ
+              ぷりのポン酢につけてお召し上がりください。
+            </p>
+            <p class="karubi-price">690<span class=tax-price>(税込759円)</span></p>
+            <div class="karubi-link">
+              <a href="#">ご注文可能なコースはこちら<span>></span></a>
+            </div>
+            <div class="karubi-link">
+              <a href="#">美味しい食べ方旨テクはこちら<span>></span></a>
+            </div>
+            <div class="karubi-img">
+              <a href="#">
+                <img src="img/img_negipon.webp">
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="mv-img">
+          <img src="img/mv_negipon.webp">
+        </div>
+      </div>
+
+      <div class="speciality">
+        <div class="karubiInner">
+          <div class="phone-karubi-body">
+            <h2>
+              厚切り上ロースの<br>
+              ～ガリバタ醤油～<br class="pc">
+            </h2>
+            <p class="karubi-info">
+              厳選した肩ロースを豪快に厚切りにし、タレの味
+              がしっかりと絡む様にスリットを入れました。自慢
+              のガリバタ醤油をたっぷりくぐらせお召し上がりく
+              ださい。
+            </p>
+            <p class="karubi-price">890<span class=tax-price>(税込979円)</span></p>
+            <div class="karubi-link">
+              <a href="#">ご注文可能なコースはこちら<span>></span></a>
+            </div>
+            <div class="karubi-link">
+              <a href="#">美味しい食べ方旨テクはこちら<span>></span></a>
+            </div>
+            <div class="karubi-img">
+              <a href="#">
+                <img src="img/img_atsugiri.webp">
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="mv-img">
+          <img src="img/mv_atsugiri.webp">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="menu">
+    <h2>五大名物がご注文可能なコース</h2>
+    <div class="menu-body">
+      <div class="menu-1">
+        <div class="menu-img">
+          <img src="img/menu_img-02.webp">
+        </div>
+        <div class="courseList">
+          <a href="#">きんぐコース</a>
+          <p>焼肉きんぐの一番人気コース！名物や期間限定商品など、バラエティ豊かなメニューを思う存分楽しめます！</p>
+        </div>
+        <div class="price">
+          <p><span>3,280円~</span>(税込3,608円~)</p>
+        </div>
+        <div class="courseList--cardTags">
+          <a href="#">幼児無料</a>
+          <a href="#">小学生半額</a>
+          <a href="#">60歳以上500円引き</a>
+        </div>
+        <div class="badges">
+          <a href="#"><img src="img/badge_godai.svg"></a>
+          <a href="#"><img src="img/badge_ura.svg"></a>
+          <a href="#"><img src="img/badge_limited.webp"></a>
+        </div>
+        <div class="cardMore">
+          <a href="#">詳しくはこちら<span>></span></a>
+        </div>
+        <a href="#" class="c-courseList1--cardLink"></a>
+      </div>
+      <div class="menu-2">
+        <div class="menu-img">
+          <img src="img/menu_img-03.webp">
+        </div>
+        <div class="courseList">
+          <a href="#">プレミアムコース</a>
+          <p>プレミアムコースだけの国産牛や厚切り牛タンをはじめ、焼肉きんぐ自慢のお肉をすべてお楽しみください！</p>
+        </div>
+        <div class="price">
+          <p><span>4,280円~</span>(税込4708円～)</p>
+        </div>
+        <div class="courseList--cardTags">
+          <a href="#">幼児無料</a>
+          <a href="#">小学生半額</a>
+          <a href="#">60歳以上500円引き</a>
+        </div>
+        <div class="badges">
+          <a href="#"><img src="img/badge_tokusen.svg"></a>
+          <a href="#"><img src="img/badge_ura.svg"></a>
+          <a href="#"><img src="img/badge_godai.svg"></a>
+          <a href="#"><img src="img/badge_kokusan.svg"></a>
+          <a href="#"><img src="img/badge_limited.webp"></a>
+        </div>
+        <div class="cardMore">
+          <a href="#">詳しくはこちら<span>></span></a>
+        </div>
+        <a href="#" class="c-courseList2--cardLink"></a>
+      </div>
+    </div>
+    <div class="connectionInfo">
+      <h2>関連情報</h2>
+      <div class="connectionInfo-body">
+        <div class="connectionInfo-item1">
+          <a href="#" class="connectionInfo-img">
+            <img src="img/img_related_allergy.webp">
+          </a>
+          <a href="#" class="connectionInfo-text">アレルギー情報</a>
+        </div>
+        <div class="connectionInfo-item2">
+          <a href="#" class="connectionInfo-img">
+            <img src="img/img_related_kids.webp">
+          </a>
+          <a href="#" class="connectionInfo-text">お子様連れのお客様へ</a>
+        </div>
+        <div class="connectionInfo-item3">
+          <a href="#" class="connectionInfo-img">
+            <img src="img/img_related_guide.webp">
+          </a>
+          <a href="#" class="connectionInfo-text">美味しい食べ方ガイド</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <section class="c-searchNav">
+    <div class="c-searchNav-BM">
+      <dl class="c-searchNav-body">
+        <dt class="c-searchNav-heading">予約・店舗検索</dt>
+        <dd class="c-searchNav-deacription">
+          お近くの焼き肉きんぐをかんたん検索。
+          <br class="hiddenPc">
+          WEB予約もできます。
+        </dd>
+      </dl>
+      <ul class="c-searchNav-menuList">
+        <li class="c-searchNav-menuItem">
+          <a href="#" class="menuButton-1">
+            <img src="img/目的地アイコン1.png">
+            <span class="menuWord">現在地から探す</span>
+            <span class="menuButton">></span>
+          </a>
+        </li>
+        <li class="c-searchNav-menuItem">
+          <a href="#" class="menuButton-2">
+            <img src="img/日本地図のアイコン.png">
+            <span class="menuWord">都道府県から探す</span>
+            <span class="menuButton">></span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="p-footer">
+    <div class="l-footer--inner">
+      <div class="l-footer--sitemap">
+        <div class="l-footer--sitemapMain">
+          <div class="p-footer-top">
+            <img src="img/logo.png" style="width: 230px; height: 81px;">
+          </div>
+          <div class="p-menuInfo-navi">
+            <div class="l-footer-naviColumn">
+              <div class="l-footer--menu js-accordion">
+                <div class="l-footer--menuTitle js-accordion-toggle">
+                  <span>メニュー情報<span>
+                </div>
+                <div class="l-footer--menuContainer">
+                  <ul class="p-menuInfo-List">
+                    <li><a href="#">メニュー情報トップ</a></li>
+                    <li><a href="#">きんぐコース</a></li>
+                    <li><a href="#">プレミアムコース</a></li>
+                    <li><a href="#">58品コース</a></li>
+                    <li><a href="#">ランチコース</a></li>
+                    <li><a href="#">ドリンク・飲み放題メニュー</a></li>
+                    <li><a href="#">五大名物</a></li>
+                    <li><a href="#">期間限定メニュー</a></li>
+                    <li><a href="#">キッズメニュー</a></li>
+                    <li><a href="#">単品メニュー</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="l-footer-naviColumn">
+              <div class="l-footer--menu">
+                <div class="l-footer--menuTitle">
+                  <a href="deliciuosEat.html">美味しい食べ方ガイド</a>
+                </div>
+              </div>
+              <div class="l-footer--menu js-accordion">
+                <div class="l-footer--menuTitle js-accordion-toggle">
+                  <span>お子様連れのお客様へ</span>
+                </div>
+                <div class="l-footer--menuContainer">
+                  <ul class="p-menuInfo-List">
+                    <li><a href="#">お子様連れのお客様へトップ</a></li>
+                    <li><a href="#">おなかがぐ～ぐ～アイランド</a></li>
+                    <li><a href="#">キッズメニュー</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="l-footer-naviColumn">
+              <div class="l-footer--menu">
+                <div class="l-footer--menuTitle">
+                  <a href="osirase.html">お知らせ</a>
+                </div>
+              </div>
+              <div class="l-footer--menu js-accordion">
+                <div class="l-footer--menuTitle js-accordion-toggle">
+                  <a href="#">予約・店舗検索</a>
+                </div>
+                <div class="l-footer--menuContainer">
+                  <ul class="p-menuInfo-List">
+                    <li><a href="#">予約店舗・情報トップ</a></li>
+                    <li><a href="#">現在地から探す</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="l-footer--othernavi">
+          <ul class="l-footer--othernaviList">
+            <li><a href="#">焼肉きんぐ公式アプリ</a></li>
+            <li><a href="#">キャンペーン</a></li>
+            <li><a href="#">アレルギー情報</a></li>
+            <li><a href="#">ご意見お問い合わせ</a></li>
+          </ul>
+        </div>
+        <div class="l-footer--sitemapSub">
+          <ul class="l-footer--corporate">
+            <li><a href="#">会社概要</a></li>
+            <li><a href="#">アルバイト情報</a></li>
+            <li><a href="#">店舗用地募集</a></li>
+            <li><a href="#">プライバシーポリシー</a></li>
+            <li><a href="#">利用規約</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <div class="footerItem1">
+      <img src="img/logo.png">
+      <ul>
+        <li><a href="#">公式X</a></li>
+        <li><a href="#">公式Instagram</a></li>
+        <li><a href="#">公式Facebook</a></li>
+      </ul>
+    </div>
+    <div class="footerItem2">
+      <ul>
+        <li class="Item2-title"><a href="#">メニュー情報</a></li>
+        <li class="Item2-body"><a href="#">キングコース</a></li>
+        <li class="Item2-body"><a href="#">プレミアムコース</a></li>
+        <li class="Item2-body"><a href="#">58品コース</a></li>
+        <li class="Item2-body"><a href="#">ランチコース</a></li>
+        <li class="Item2-body"><a href="#">ドリンク・飲み放題メニュー</a></li>
+        <Li class="Item2-body"><a href="#">五大名物</a></Li>
+        <Li class="Item2-body"><a href="#">期間限定メニュー</a></Li>
+        <li class="Item2-body"><a href="#">キッズメニュー</a></li>
+        <li class="Item2-body"><a href="#">単品メニュー</a></li>
+      </ul>
+    </div>
+    <div class="footerItem3">
+      <ul class="Item3-tilte">
+        <li class="Item3-tilte1"><a href="deliciuosEat.html">美味しい食べ方ガイド</a></li>
+        <li class="Item3-tilte2"><a href="kodomo.html">お子様連れのお客様へ</a></li>
+      </ul>
+      <div class="footerItem2-1">
+        <ul>
+          <li class="footerItem2-1-1"><a href="#">おなかぐ～ぐ～アイランド</a></li>
+          <li class="footerItem2-1-2"><a href="#">キッズメニュー</a></li>
+        </ul>
+      </div>
+      <ul>
+        <li class="footerItem3-1"><a href="yakinikuKing.html">焼肉きんぐについて</a></li>
+        <li class="footerItem3-2"><a href="#">安全安心の取り組み</a></li>
+      </ul>
+    </div>
+    <div class="footerItem4">
+      <ul>
+        <li class="footerItem4-1"><a href="osirase.html">お知らせ</a></li>
+        <li class="footerItem4-2"><a href="#">予約・店舗検索</a></li>
+        <li class="footerItem4-3"><a href="#">現在地から探す</a></li>
+      </ul>
+    </div>
+    <div class="footerItem5">
+      <ul>
+        <li class="footerItem5-1"><a href="#">焼肉きんぐ公式アプリ</a></li>
+        <li class="footerItem5-2"><a href="#">キャンペーン</a></li>
+        <li class="footerItem5-3"><a href="#">アレルギー情報</a></li>
+        <li class="footerItem5-4"><a href="#">ご意見お問い合わせ</a></li>
+      </ul>
+    </div>
+  </footer>
+  <div class="footerItem6">
+    <ul>
+      <li><a href="#">会社概要</a></li>
+      <li><a href="#">アルバイト情報</a></li>
+      <li><a href="#">店舗用地募集</a></li>
+      <li><a href="#">プライバシーポリシー</a></li>
+      <li><a href="#">利用規約</a></li>
+    </ul>
+  </div>
+  <div class="copyright">
+    <span class="copyLink">©THE MONOGATARI CORPORATION ALL RIGHTS RESERVED.</span>
+  </div>
+  <script src="godai.js"></script>
+</body>
+
+</html>
