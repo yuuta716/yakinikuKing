@@ -1,0 +1,739 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="kodomo/style.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="l-header-main">
+    <a href="#" class="l-img"><img src="img/logo.png"></a>
+    <div class="l-btn">
+      <a href="#">予約・店舗検索</a>
+      <span class="l-btn_icon"><img src="img/カレンダーのフリーアイコン2.png"></span>
+    </div>
+  </div>
+  <nav class="l-bottomNav">
+    <div class="l-bottomNav-body">
+      <ul class="l-bottomNav-list">
+        <li class="l-bottomNav-item -current">
+          <a href="index.html" class="l-bottomNav-button"><span>トップ</span></a>
+        </li>
+        <li class="l-bottomNav-item">
+          <a href="menu.html" class="l-bottomNav-button"><span>メニュー<br>情報</span></a>
+        </li>
+        <li class="l-bottomNav-item">
+          <a href="kodomo.html" class="l-bottomNav-button"><span>お子様連れ<br>歓迎</span></a>
+        </li>
+        <li class="l-bottomNav-item">
+          <a href="deliciuosEat.html" class="l-bottomNav-button"><span>美味しい<br>食べ方</span></a>
+        </li>
+        <li class="l-bottomNav-item">
+          <button class="l-bottomNav-Menu-button"><span>Menu</span></button>
+          <div class="l-bottomNav-Menu-List overlay">
+            <span class="material-icons" id="close">close</span>
+            <div class="l-modalMenu--bodyInner">
+              <nav>
+                <ul>
+                  <li>
+                    <div class="overlay-btn">
+                      <a href="#">予約・店舗検索</a>
+                      <span class="l-btn_icon"><img src="img/カレンダーのフリーアイコン2.png"></span>
+                    </div>
+                  </li>
+                  <li><a href="#" class="overlayTop">トップ</a></li>
+                  <li>
+                    <div class="overlayMenuTitle">
+                      <a href="#">メニュー情報</a>
+                    </div>
+                    <div class="l-modalMenu--navAccordion">
+                      <div class="overlayMenuBody">
+                        <ul class="overlayMenuBody-navThumb">
+                          <li>
+                            <a href="#">
+                              <img src="img/menu_img-02.webp">
+                              <span>きんぐコース</span>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#">
+                              <img src="img/menu_img-02.webp">
+                              <span>きんぐコース</span>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#">
+                              <img src="img/menu_img-01.webp">
+                              <span>58品コース</span>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#">
+                              <img src="img/carousel-new.jpg">
+                              <span>五大名物コース</span>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#">
+                              <img src="img/menu_img-02.webp">
+                              <span>期間限定</span>
+                            </a>
+                          </li>
+                        </ul>
+                        <ul class="overlayMenuBody-navList">
+                          <li><a href="#">ドリンク・飲み放題</a></li>
+                          <li><a href="#">ランチコース</a></li>
+                          <li><a href="#">キッズメニュー</a></li>
+                          <li><a href="#">単品メニュー</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="l-modalMenu--nav">
+                      <div class="l-modalMenu--navitle">
+                        <a href="deliciuosEat.html">美味しい食べ方ガイド</a>
+                      </div>
+                    </div>
+                    <div class="l-modalMenu--menu js-accordion">
+                      <div class="l-modalMenu--menuTitle Js-accordion-toggle">
+                        <span>お子様連れのお客様へ<span>
+                      </div>
+                      <div class="l-modalMenu--menuContainer">
+                        <ul class="l-modalMenu-menuList">
+                          <li><a href="#">お子様連れのお客様へトップ</a></li>
+                          <li><a href="#">おなかがぐ～ぐ～アイランド</a></li>
+                          <li><a href="#">キッズメニュー</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="l-modalMenu--menu js-accordion">
+                      <div class="l-modalMenu--menuTitle Js-accordion-toggle">
+                        <span>焼肉きんぐについて<span>
+                      </div>
+                      <div class="l-modalMenu--menuContainer">
+                        <ul class="l-modalMenu-menuList">
+                          <li><a href="#">焼肉きんぐについてトップ</a></li>
+                          <li><a href="#">安全安心の取り組み</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="l-modalMenu--navitle">
+                      <a href="osirase.html">お知らせ</a>
+                    </div>
+                    <div class="l-modalMenu--navitle">
+                      <a href="#">公式アプリダウンロード</a>
+                    </div>
+                    <div class="l-modalMenu-sns">
+                      <ul class="l-modalMenu-snsList">
+                        <li><a href="#">公式</a></li>
+                        <li><a href="#">公式アプリ</a></li>
+                        <li><a href="#">アルバイト募集</a></li>
+                      </ul>
+                    </div>
+                    <div class="l-modalMenu--sitemapSub">
+                      <ul class="l-modalMenu--corporate">
+                        <li><a href="#">会社概要</a></li>
+                        <li><a href="#">店舗用地募集</a></li>
+                        <li><a href="#">プライバシーポリシー</a></li>
+                        <li><a href="#">利用規約</a></li>
+                        <li><a href="#">ご意見お問い合わせ</a></li>
+                      </ul>
+                    </div>
+                    <section class="c-searchNav">
+                      <div class="C-searchNav-BM">
+                        <h2 class="C-searchNav-heading">予約・店舗検索</h2>
+                        <ul class="C-searchNav-menuList">
+                          <li class="c-searchNav-menuItem">
+                            <a href="#" class="menuButton-1">
+                              <img src="img/目的地アイコン1.png">
+                              <span class="menuWord">現在地から探す</span>
+                              <span class="menuButton">></span>
+                            </a>
+                          </li>
+                          <li class="c-searchNav-menuItem">
+                            <a href="#" class="menuButton-2">
+                              <img src="img/日本地図のアイコン.png">
+                              <span class="menuWord">都道府県から探す</span>
+                              <span class="menuButton">></span>
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </section>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <header id="header">
+    <div class="header-main">
+      <div class="logo">
+        <img src="img/logo.png">
+      </div>
+      <nav>
+        <ul>
+          <li><a class="underLine" href="index.html">トップ</a></li>
+          <li class="list_item">
+            <div class="link link-hover" tabindex="0">
+              <a href="menu.html" class="underLine">メニュー情報</a>
+              <div class="dropDown">
+                <ul class="dropDown_list">
+                  <li class="dropDown_item">
+                    <a href="#" class="modal-title">メニュー情報<span>></span></a>
+                  </li>
+                  <li class="dropDown_item">
+                    <div class="dropDown-courseMenu1">
+                      <a href="#">
+                        <h3>きんぐコース</h3>
+                        <div class="sub-badges">
+                          <img src="img/badge_godai.svg">
+                          <img src="img/badge_ura.svg">
+                          <img src="img/badge_limited.webp">
+                        </div>
+                        <img src="img/menu_img-02.webp" width="180" height="101"
+                          style="object-fit: cover; vertical-align: bottom;">
+                      </a>
+                    </div>
+                    <div class="dropDown-courseMenu2">
+                      <a href="#">
+                        <h3>プレミアムコース</h3>
+                        <div class="sub-badges">
+                          <img src="img/badge_tokusen.svg">
+                          <img src="img/badge_ura.svg">
+                          <img src="img/badge_godai.svg">
+                          <img src="img/badge_kokusan.svg">
+                          <img src="img/badge_limited.webp">
+                        </div>
+                        <img src="img/menu_img-03.webp" width="180" height="101"
+                          style="object-fit: cover; vertical-align: bottom;">
+                      </a>
+                    </div>
+                    <div class="dropDown-courseMenu3">
+                      <a href="#">
+                        <h3>58品コース</h3>
+                        <img src="img/menu_img-01.webp" width="180" height="101"
+                          style="object-fit: cover; vertical-align: bottom;">
+                      </a>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="dropDown-list" style="text-align: left;">
+                      <ul>
+                        <li><a href="#">五大名物</a></li>
+                        <li><a href="#">期間限定</a></li>
+                        <li><a href="#">ドリンク・飲み放題メニュー</a></li>
+                        <li><a href="#">ランチコース</a></li>
+                        <li><a href="#">キッズメニュー</a></li>
+                        <li><a href="#">単品メニュー</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+          </li>
+          <li><a class="underLine" href="deliciuosEat.html">美味しい食べ方</a></li>
+          <li class="list_item">
+            <div class="link link-hover" tabindex="0">
+              <a href="#" class="underLine">お子様連れ歓迎</a>
+              <div class="dropDown">
+                <ul class="dropDown_list">
+                  <li class="dropDown_item">
+                    <a href="#" class="modal-title">お子様連れ歓迎<span>></span></a>
+                  </li>
+                  <li class="dropDown_item">
+                    <div class="modal-kidsMenu1">
+                      <a href="#">
+                        <h3>おなかがぐ～ぐ～アイランド</h3>
+                        <img src="img/thumb_mega_gugu.webp" width="180" height="101" style="object-fit: cover;">
+                      </a>
+                    </div>
+                    <div class="modal-kidsMenu2">
+                      <a href="#">
+                        <h3>キッズメニュー</h3>
+                        <img src="img/thumb_mega_kids.webp" width="180" height="101" style="object-fit: cover;">
+                      </a>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+          </li>
+          <li><a class="underLine" href="yakinikuKing.html">焼肉キングについて</a></li>
+          <li><a class="underLine" href="osirase.html">お知らせ</a></li>
+        </ul>
+      </nav>
+      <div class="btn">
+        <a href="#">予約・店舗検索</a>
+        <span class="btn_icon"><img src="img/カレンダーのフリーアイコン2.png"></span>
+      </div>
+    </div>
+  </header>
+  <section class="sub-header">
+    <div class="sub_rinks">
+      <a href="#" class="c_hoverLine">
+        <span class="c_hover--text">公式X</span>
+      </a>
+      <a href="#" class="c_hoverLine">
+        <span class="c_hover--text">公式アプリ</span>
+      </a>
+      <a href="#" class="c_hoverLine">
+        <psan class="c_hover--text">アルバイト募集</psan>
+      </a>
+    </div>
+    <div class="sub-header-body">
+      <h2>お子様連れ歓迎</h2>
+      <p>
+        焼肉きんぐはお子様大歓迎！<br>
+        お子様連れやご家族でお越しのお客様へ様々なサービスを提供しております。<br>
+        お気軽にスタッフへお申し付けください。
+      </p>
+    </div>
+    <div class="sub-header-video">
+      <video src="video/485_1280x720.mp4" autoplay muted loop playsinline></video>
+    </div>
+  </section>
+
+  <div class="header-link">
+    <ul>
+      <li><a href="#" class="header-link1">食べ放題コースにおける価格改定のお知らせ<span class="close1">×</span></a></li>
+      <li><a href="#" class="header-link2">各種割引について<span class="close2">×</span></a></li>
+    </ul>
+  </div>
+  <article class="l-anchor">
+    <nav class="c-anchor">
+      <ul class="c-anchor--list">
+        <li class="c-anchor--item">
+          <a class="c-anchor--link" href="#">
+            <div class="c-anchor--text">
+              <span>お子様用食器・カトラリー</span>
+            </div>
+            <span class="c-anchor--icon">↓</span>
+          </a>
+        </li>
+        <li class="c-anchor--item">
+          <a class="c-anchor--link" href="#">
+            <div class="c-anchor--text">
+              <span>設備紹介</span>
+            </div>
+            <span class="c-anchor--icon">↓</span>
+          </a>
+        </li>
+        <li class="c-anchor--item">
+          <a class="c-anchor--link" href="#">
+            <div class="c-anchor--text">
+              <span>衛生管理</span>
+            </div>
+            <span class="c-anchor--icon">↓</span>
+          </a>
+        </li>
+        <li class="c-anchor--item">
+          <a class="c-anchor--link" href="#">
+            <div class="c-anchor--text">
+              <span>アレルギー情報</span>
+            </div>
+            <span class="c-anchor--icon">↓</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </article>
+
+  <section class="l-section">
+    <div class="c-columns1">
+      <div class="c-column-item">
+        <a href="#">
+          <img src="img/thumb_mega_gugu.webp">
+          <div class="c-column-itemBody1">
+            <h3>お子様企画</h3>
+            <div class="c-column-itemBody1-p">
+              <div class="c-itemBody1-title">
+                <span>「おなかがぐ～ぐ～アイランド」</span>
+              </div>
+              <div class="c-itemBody1-span">
+                <span>></span>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="c-column-item">
+        <a href="#">
+          <img src="img/thumb_mega_kids.webp">
+          <div class="c-column-itemBody2">
+            <h3>キッズメニュー</h3>
+            <p>お子様に人気のメニューも<br>数多くご用意してます<span>></span></p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="l-section">
+    <h2>お子様用食器・カトラリーの紹介</h2>
+    <div class="c-columns2">
+      <div class="c-column-item">
+        <div class="p-menuCard-img">
+          <img src="img/service_img_kidscutlery.webp">
+        </div>
+        <div class="p-menuCard-body">
+          <h4>お子様用お皿・スプーン・フォーク</h4>
+          <p>
+            お皿、スプーン、フォーク、お箸、麺切り用のハサミなどを取り揃えております。最低限の荷物でご来店ください。
+          </p>
+        </div>
+        <div class="c-noteLists">
+          <ul>
+            <li>※写真はイメージです</li>
+            <li>※お取り扱いのない店舗もございます</li>
+          </ul>
+        </div>
+      </div>
+      <div class="c-column-item">
+        <div class="p-menuCard-img">
+          <img src="img/img_isu.webp">
+        </div>
+        <div class="p-menuCard-body">
+          <h4>お子様イス</h4>
+          <p>
+            赤ちゃんや小さなお子様用のイスをご用意しております。
+            安心してご来店ください。
+          </p>
+        </div>
+        <div class="c-noteLists">
+          <ul>
+            <li>※写真はイメージです</li>
+            <li>※お取り扱いのない店舗もございます</li>
+          </ul>
+        </div>
+      </div>
+      <div class="c-column-item">
+        <div class="p-menuCard-img">
+          <img src="img/img_cup.webp">
+        </div>
+        <div class="p-menuCard-body">
+          <h4>蓋つきコップ</h4>
+          <p>
+            お子様がコップを倒してしまっても大丈夫です。こぼれにくい蓋つきのコップがございます。
+          </p>
+        </div>
+        <div class="c-noteLists">
+          <ul>
+            <li>※写真はイメージです</li>
+            <li>※お取り扱いのない店舗もございます</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="l-section">
+    <h2>おむつ交換台、バリアフリートイレの案内</h2>
+    <div class="c-columns2">
+      <div class="c-column-item">
+        <div class="p-menuCard-img2">
+          <img src="img/service_img_equipment.webp">
+        </div>
+        <div class="p-menuCard-body">
+          <h4>おむつ交換台</h4>
+          <p>
+            おむつ交換台をご用意しております。使用済みのおむつも廃棄いただけます。
+          </p>
+        </div>
+        <div class="c-noteLists">
+          <ul>
+            <li>※写真はイメージです</li>
+            <li>※お取り扱いのない店舗もございます</li>
+          </ul>
+        </div>
+      </div>
+      <div class="c-column-item">
+        <div class="p-menuCard-img2">
+          <img src="img/img_restroom.webp">
+        </div>
+        <div class="p-menuCard-body">
+          <h4>バリアフリートイレ</h4>
+          <p>
+            障害をお持ちのお客様や、高齢者、妊産婦の方が安心してご利用いただけるトイレです。
+          </p>
+        </div>
+        <div class="c-noteLists">
+          <ul>
+            <li>※写真はイメージです</li>
+            <li>※お取り扱いのない店舗もございます</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="l-section">
+    <h2>安全・安心の取り組み</h2>
+    <div class="c-columns">
+      <div class="c-column-item1">
+        <div class="p-mediaSet--thumb">
+          <img src="img/img_safety.webp">
+        </div>
+        <div class="p-mediaSet--detail">
+          <p>
+            安心しておいしい焼肉を食べていただき、安全に焼肉きんぐをご利用いただくために全店で徹底した衛生管理を行なっております。
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="l-section">
+    <h2>アレルギー情報</h2>
+    <div class="c-columns">
+      <div class="c-column-item2">
+        <div class="p-mediaSet--detail2">
+          <p>
+            さまざまなお客様が安心して快適に「おいしい焼肉」を楽しんでいただくために、焼肉きんぐでは、アレルギー情報を随時更新しながら提供しています。
+          </p>
+          <div class="p-link">
+            <a href="#">詳しくはこちら<span>></span></a>
+          </div>
+        </div>
+        <div class="p-mediaSet--thumb">
+          <img src="img/img_arrelgy.webp">
+        </div>
+      </div>
+
+      <div class="P-c-column-item2">
+        <div class="p-mediaSet--thumb">
+          <img src="img/img_arrelgy.webp">
+        </div>
+        <div class="p-mediaSet--detail2">
+          <p>
+            さまざまなお客様が安心して快適に「おいしい焼肉」を楽しんでいただくために、焼肉きんぐでは、アレルギー情報を随時更新しながら提供しています。
+          </p>
+          <div class="p-link">
+            <a href="#">詳しくはこちら<span>></span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="l-section">
+    <h2>関連情報</h2>
+    <div class="c-columns2">
+      <div class="c-column-item">
+        <a href="#">
+          <div class="p-menuCard-img">
+            <img src="img/img_related_kids.webp">
+          </div>
+          <div class="p-menuCard-body">
+            <span>お子様連れのお客様へ</span>
+          </div>
+        </a>
+      </div>
+      <div class="c-column-item">
+        <a href="#">
+          <div class="p-menuCard-img">
+            <img src="img/img_related_guide.webp">
+          </div>
+          <div class="p-menuCard-body">
+            <span>美味しい食べ方ガイド</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="c-searchNav">
+    <div class="c-searchNav-BM">
+      <dl class="c-searchNav-body">
+        <dt class="c-searchNav-heading">予約・店舗検索</dt>
+        <dd class="c-searchNav-deacription">
+          お近くの焼き肉きんぐをかんたん検索。
+          <br class="hiddenPc">
+          WEB予約もできます。
+        </dd>
+      </dl>
+      <ul class="c-searchNav-menuList">
+        <li class="c-searchNav-menuItem">
+          <a href="#" class="menuButton-1">
+            <img src="img/目的地アイコン1.png">
+            <span class="menuWord">現在地から探す</span>
+            <span class="menuButton">></span>
+          </a>
+        </li>
+        <li class="c-searchNav-menuItem">
+          <a href="#" class="menuButton-2">
+            <img src="img/日本地図のアイコン.png">
+            <span class="menuWord">都道府県から探す</span>
+            <span class="menuButton">></span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="p-footer">
+    <div class="l-footer--inner">
+      <div class="l-footer--sitemap">
+        <div class="l-footer--sitemapMain">
+          <div class="p-footer-top">
+            <img src="img/logo.png" style="width: 230px; height: 81px;">
+          </div>
+          <div class="p-menuInfo-navi">
+            <div class="l-footer-naviColumn">
+              <div class="l-footer--menu js-accordion">
+                <div class="l-footer--menuTitle js-accordion-toggle">
+                  <span>メニュー情報<span>
+                </div>
+                <div class="l-footer--menuContainer">
+                  <ul class="p-menuInfo-List">
+                    <li><a href="#">メニュー情報トップ</a></li>
+                    <li><a href="#">きんぐコース</a></li>
+                    <li><a href="#">プレミアムコース</a></li>
+                    <li><a href="#">58品コース</a></li>
+                    <li><a href="#">ランチコース</a></li>
+                    <li><a href="#">ドリンク・飲み放題メニュー</a></li>
+                    <li><a href="#">五大名物</a></li>
+                    <li><a href="#">期間限定メニュー</a></li>
+                    <li><a href="#">キッズメニュー</a></li>
+                    <li><a href="#">単品メニュー</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="l-footer-naviColumn">
+              <div class="l-footer--menu">
+                <div class="l-footer--menuTitle">
+                  <a href="#">美味しい食べ方ガイド</a>
+                </div>
+              </div>
+              <div class="l-footer--menu js-accordion">
+                <div class="l-footer--menuTitle js-accordion-toggle">
+                  <span>お子様連れのお客様へ</span>
+                </div>
+                <div class="l-footer--menuContainer">
+                  <ul class="p-menuInfo-List">
+                    <li><a href="#">お子様連れのお客様へトップ</a></li>
+                    <li><a href="#">おなかがぐ～ぐ～アイランド</a></li>
+                    <li><a href="#">キッズメニュー</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="l-footer-naviColumn">
+              <div class="l-footer--menu">
+                <div class="l-footer--menuTitle">
+                  <a href="#">お知らせ</a>
+                </div>
+              </div>
+              <div class="l-footer--menu js-accordion">
+                <div class="l-footer--menuTitle js-accordion-toggle">
+                  <a href="#">予約・店舗検索</a>
+                </div>
+                <div class="l-footer--menuContainer">
+                  <ul class="p-menuInfo-List">
+                    <li><a href="#">予約店舗・情報トップ</a></li>
+                    <li><a href="#">現在地から探す</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="l-footer--othernavi">
+          <ul class="l-footer--othernaviList">
+            <li><a href="#">焼肉きんぐ公式アプリ</a></li>
+            <li><a href="#">キャンペーン</a></li>
+            <li><a href="#">アレルギー情報</a></li>
+            <li><a href="#">ご意見お問い合わせ</a></li>
+          </ul>
+        </div>
+        <div class="l-footer--sitemapSub">
+          <ul class="l-footer--corporate">
+            <li><a href="#">会社概要</a></li>
+            <li><a href="#">アルバイト情報</a></li>
+            <li><a href="#">店舗用地募集</a></li>
+            <li><a href="#">プライバシーポリシー</a></li>
+            <li><a href="#">利用規約</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footerItem1">
+      <img src="img/logo.png">
+      <ul>
+        <li><a href="#">公式X</a></li>
+        <li><a href="#">公式Instagram</a></li>
+        <li><a href="#">公式Facebook</a></li>
+      </ul>
+    </div>
+    <div class="footerItem2">
+      <ul>
+        <li class="Item2-title"><a href="#">メニュー情報</a></li>
+        <li class="Item2-body"><a href="#">キングコース</a></li>
+        <li class="Item2-body"><a href="#">プレミアムコース</a></li>
+        <li class="Item2-body"><a href="#">58品コース</a></li>
+        <li class="Item2-body"><a href="#">ランチコース</a></li>
+        <li class="Item2-body"><a href="#">ドリンク・飲み放題メニュー</a></li>
+        <Li class="Item2-body"><a href="#">五大名物</a></Li>
+        <Li class="Item2-body"><a href="#">期間限定メニュー</a></Li>
+        <li class="Item2-body"><a href="#">キッズメニュー</a></li>
+        <li class="Item2-body"><a href="#">単品メニュー</a></li>
+      </ul>
+    </div>
+    <div class="footerItem3">
+      <ul class="Item3-tilte">
+        <li class="Item3-tilte1"><a href="#">美味しい食べ方ガイド</a></li>
+        <li class="Item3-tilte2"><a href="#">お子様連れのお客様へ</a></li>
+      </ul>
+      <div class="footerItem2-1">
+        <ul>
+          <li class="footerItem2-1-1"><a href="#">おなかぐ～ぐ～アイランド</a></li>
+          <li class="footerItem2-1-2"><a href="#">キッズメニュー</a></li>
+        </ul>
+      </div>
+      <ul>
+        <li class="footerItem3-1"><a href="#">焼肉きんぐについて</a></li>
+        <li class="footerItem3-2"><a href="#">安全安心の取り組み</a></li>
+      </ul>
+    </div>
+    <div class="footerItem4">
+      <ul>
+        <li class="footerItem4-1"><a href="#">お知らせ</a></li>
+        <li class="footerItem4-2"><a href="#">予約・店舗検索</a></li>
+        <li class="footerItem4-3"><a href="#">現在地から探す</a></li>
+      </ul>
+    </div>
+    <div class="footerItem5">
+      <ul>
+        <li class="footerItem5-1"><a href="#">焼肉きんぐ公式アプリ</a></li>
+        <li class="footerItem5-2"><a href="#">キャンペーン</a></li>
+        <li class="footerItem5-3"><a href="#">アレルギー情報</a></li>
+        <li class="footerItem5-4"><a href="#">ご意見お問い合わせ</a></li>
+      </ul>
+    </div>
+  </footer>
+  <div class="footerItem6">
+    <ul>
+      <li><a href="#">会社概要</a></li>
+      <li><a href="#">アルバイト情報</a></li>
+      <li><a href="#">店舗用地募集</a></li>
+      <li><a href="#">プライバシーポリシー</a></li>
+      <li><a href="#">利用規約</a></li>
+    </ul>
+  </div>
+  <div class="copyright">
+    <span class="copyLink">©THE MONOGATARI CORPORATION ALL RIGHTS RESERVED.</span>
+  </div>
+
+  <script src="kodomo.js"></script>
+</body>
+
+</html>
